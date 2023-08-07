@@ -1,0 +1,16 @@
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Phone</th>
+        <th>Email</th>
+    </tr>
+    {% for channel_partner in channel_partners %}
+    <tr>
+        <td>{{ channel_partner.name }}</td>
+        <td>{{ channel_partner.address }}</td>
+        <td>{{ channel_partner.phone_number }}</td>
+        <td>{{ channel_partner.email }}</td>
+    </tr>
+    {% endfor %}
+</table>
