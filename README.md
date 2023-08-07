@@ -63,6 +63,7 @@ Follow the instructions below to get started with Arva Field Management System a
 - The project does not have much in the way of error handling. There are a couple different ways I would have handled it. Try/except blocks, Django's built-in error handling, or Django Rest Framework's built-in error handling.
 
 ## Future Improvements
+- Add ability to add new clients in app instead of through the Django admin or migrations
 - Add ability to add, edit, update, delete Channel Partners in app instead of through the Django admin or migrations
 - Add CSS to make it look better
 - Add authentication and authorization
