@@ -1,0 +1,19 @@
+<table>
+    <tr>
+        <th>Field Name</th>
+        <th>Field Location</th>
+        <th>Acreage</th>
+        <th>Field Type</th>
+    </tr>
+    {% for field in fields %}
+    <tr>
+        <td>{{ field.field_name }}</td>
+        <td>{{ field.field_location }}</td>
+        <td>{{ field.acreage }}</td>
+        <td>{{ field.field_type }}</td>
+        <td><a href="/client/{{ client.id }}/update_field/{{ field.id }}">Edit</a></td>
+        <td><a href="/client/{{ client.id }}/delete_field/{{ field.id }}">Delete</a></td>
+    </tr>
+    {% endfor %}
+</table>
+<a href="/client/{{ client.id }}/create_field">Add Field</a>

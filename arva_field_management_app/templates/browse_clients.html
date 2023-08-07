@@ -1,0 +1,17 @@
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Phone</th>
+        <th>Email</th>
+    </tr>
+    {% for client in clients %}
+    <tr>
+        <td>{{ client.name }}</td>
+        <td>{{ client.address }}</td>
+        <td>{{ client.phone_number }}</td>
+        <td>{{ client.email }}</td>
+        <td><a href="/browse_fields/{{ client.id }}">View Fields</a></td>
+    </tr>
+    {% endfor %}
+</table>
